@@ -1,0 +1,29 @@
+<form #category="ngForm" (ngSubmit)=" addproduct(product.value)">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">product name</label>
+    <input type="text" class="form-control" name="name" ngModel>
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">image</label>
+    <input type="text" class="form-control" name="img" ngModel>
+  </div>
+
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+        <li *ngFor="let item of category" >
+
+          <a class="drop-item" (click)="getSelectionData(item.id)">{{item.name}}</a>
+          </li>
+      </ul>
+
+   
+    </div>
+ 
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

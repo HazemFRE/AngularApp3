@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class APIURLService {
 
+
   constructor(private _url: HttpClient) { }
   getData() {
     return this._url.get<any>("https://67cd64b6dd7651e464ee3d63.mockapi.io/categories");
@@ -17,6 +18,21 @@ export class APIURLService {
   getProducts() {
     return this._url.get<any>("https://67cd64b6dd7651e464ee3d63.mockapi.io/products");
   }
+  postNewuser(data: any): Observable<any> {
+    return this._url.post("https://67cea6ee125cd5af757b6514.mockapi.io/Users", data ) 
+  }
+
+  addcategory(data: any) {
+    return this._url.post("https://67cd64b6dd7651e464ee3d63.mockapi.io/categories" , data) 
+
+  }
+  addproduct(data: any) {
+    return this._url.get("https://67cd64b6dd7651e464ee3d63.mockapi.io/products",data)
+  }
+
+
+  
+  
 
   
 }
