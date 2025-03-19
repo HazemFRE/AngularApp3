@@ -11,6 +11,9 @@ import { AddcategoryComponent } from './Admin/addcategory/addcategory.component'
 import { AddproductComponent } from './Admin/addproduct/addproduct.component';
 import { GetproductComponent } from './Admin/getproduct/getproduct.component';
 import { GetcategoryComponent } from './Admin/getcategory/getcategory.component';
+import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
+import { EditproductComponent } from './Admin/editproduct/editproduct.component';
+
 
 const routes: Routes = [
 
@@ -24,7 +27,10 @@ const routes: Routes = [
       { path: "addcategory", component: AddcategoryComponent },
       { path: "addproduct", component: AddproductComponent },
       { path: "getproduct", component: GetproductComponent },
-      { path: "getcategory", component: GetcategoryComponent }
+      { path: "getcategory", component: GetcategoryComponent },
+      { path: "editcategory/:id", component: EditcategoryComponent },
+      { path: "editproduct/:id", component: EditproductComponent }
+    
 
    
   ] }

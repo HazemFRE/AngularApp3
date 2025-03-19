@@ -17,6 +17,8 @@ import { AddproductComponent } from './Admin/addproduct/addproduct.component';
 import { DashboardComponent } from './Admin/dashboard/dashboard.component';
 import { GetcategoryComponent } from './Admin/getcategory/getcategory.component';
 import { GetproductComponent } from './Admin/getproduct/getproduct.component';
+import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
+import { EditproductComponent } from './Admin/editproduct/editproduct.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { GetproductComponent } from './Admin/getproduct/getproduct.component';
     AddproductComponent,
     DashboardComponent,
     GetcategoryComponent,
-    GetproductComponent
+    GetproductComponent,
+    EditcategoryComponent,
+    EditproductComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,

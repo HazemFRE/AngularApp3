@@ -29,6 +29,15 @@ export class APIURLService {
   addproduct(data: any) {
     return this._url.post("https://67cd64b6dd7651e464ee3d63.mockapi.io/products",data)
   }
+  updatecategory(id: any, data: any) {
+    return this._url.put(`https://67cd64b6dd7651e464ee3d63.mockapi.io/categories/${id}`, data)
+  }
+  editproduct(id: any, data: any) {
+    return this._url.put(`https://67cd64b6dd7651e464ee3d63.mockapi.io/products/${id}`, data)
+  }
+
+
+
 
 
   
