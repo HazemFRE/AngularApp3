@@ -1,4 +1,4 @@
-<form #category="ngForm" (ngSubmit)=" addproduct(product.value)">
+<form #category="ngForm" (ngSubmit)="addproduct(category.value)">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">product name</label>
     <input type="text" class="form-control" name="name" ngModel>
@@ -6,24 +6,14 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">image</label>
-    <input type="text" class="form-control" name="img" ngModel>
+    <input type="text" class="form-control" name="avatar" ngModel>
   </div>
 
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown button
-    </button>
-    <ul class="dropdown-menu">
-        <li *ngFor="let item of category" >
-
-          <a class="drop-item" (click)="getSelectionData(item.id)">{{item.name}}</a>
-          </li>
-      </ul>
-
-   
-    </div>
- 
-
+  <select name="categoryId" ngModel class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    <option *ngFor="let item of prodata" value={{item.id}}>
+      {{ item.name }}
+    </option>
+  </select>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 

@@ -27,7 +27,7 @@ export class APIURLService {
 
   }
   addproduct(data: any) {
-    return this._url.get("https://67cd64b6dd7651e464ee3d63.mockapi.io/products",data)
+    return this._url.post("https://67cd64b6dd7651e464ee3d63.mockapi.io/products",data)
   }
 
 
