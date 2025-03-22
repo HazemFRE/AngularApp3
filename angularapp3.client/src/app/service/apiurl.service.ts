@@ -35,6 +35,9 @@ export class APIURLService {
   editproduct(id: any, data: any) {
     return this._url.put(`https://67cd64b6dd7651e464ee3d63.mockapi.io/products/${id}`, data)
   }
+  getUser( ) {
+    return this._url.get<any>(`https://67d3448f8bca322cc269b2a9.mockapi.io/User`);
+  }
 
 
 

@@ -13,6 +13,8 @@ import { GetproductComponent } from './Admin/getproduct/getproduct.component';
 import { GetcategoryComponent } from './Admin/getcategory/getcategory.component';
 import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
 import { EditproductComponent } from './Admin/editproduct/editproduct.component';
+import { EditprofileComponent } from './User/editprofile/editprofile.component';
+
 
 
 const routes: Routes = [
@@ -29,7 +31,10 @@ const routes: Routes = [
       { path: "getproduct", component: GetproductComponent },
       { path: "getcategory", component: GetcategoryComponent },
       { path: "editcategory/:id", component: EditcategoryComponent },
-      { path: "editproduct/:id", component: EditproductComponent }
+      { path: "editproduct/:id", component: EditproductComponent },
+      { path: "editprofile/:id", component: EditprofileComponent },
+   
+
     
 
    

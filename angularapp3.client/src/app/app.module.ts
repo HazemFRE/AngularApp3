@@ -19,6 +19,9 @@ import { GetcategoryComponent } from './Admin/getcategory/getcategory.component'
 import { GetproductComponent } from './Admin/getproduct/getproduct.component';
 import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
 import { EditproductComponent } from './Admin/editproduct/editproduct.component';
+import { ProfileComponent } from './User/profile/profile.component';
+import { EditprofileComponent } from './User/editprofile/editprofile.component';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { EditproductComponent } from './Admin/editproduct/editproduct.component'
     GetcategoryComponent,
     GetproductComponent,
     EditcategoryComponent,
-    EditproductComponent
+    EditproductComponent,
+    ProfileComponent,
+    EditprofileComponent,
+
   ],
   imports: [
     BrowserModule, HttpClientModule,
