@@ -37,6 +37,18 @@ export class APIURLService {
   }
   getUser( ) {
     return this._url.get<any>(`https://67d3448f8bca322cc269b2a9.mockapi.io/User`);
+    
+  }
+  getvoucher() {
+    return this._url.get<any>("https://67d9ae8e35c87309f529c67f.mockapi.io/sign/voucher");
+  }
+  postvoucher(data: any) {
+    return this._url.post(`https://67d9ae8e35c87309f529c67f.mockapi.io/sign/voucher`, data)
+
+  }
+  editvoucher(id: any, data: any) {
+
+    return this._url.put(`https://67d9ae8e35c87309f529c67f.mockapi.io/sign/voucher/${id}`, data)
   }
 
 

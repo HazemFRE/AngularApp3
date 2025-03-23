@@ -21,6 +21,9 @@ import { EditcategoryComponent } from './Admin/editcategory/editcategory.compone
 import { EditproductComponent } from './Admin/editproduct/editproduct.component';
 import { ProfileComponent } from './User/profile/profile.component';
 import { EditprofileComponent } from './User/editprofile/editprofile.component';
+import { VoucherComponent } from './voucher/voucher.component';
+import { PostvoucherComponent } from './postvoucher/postvoucher.component';
+import { EditvoucherComponent } from './editvoucher/editvoucher.component';
 
 
 @NgModule({
@@ -42,6 +45,9 @@ import { EditprofileComponent } from './User/editprofile/editprofile.component';
     EditproductComponent,
     ProfileComponent,
     EditprofileComponent,
+    VoucherComponent,
+    PostvoucherComponent,
+    EditvoucherComponent,
 
   ],
   imports: [
